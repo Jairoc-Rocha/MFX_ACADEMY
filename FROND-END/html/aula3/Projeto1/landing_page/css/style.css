@@ -1,0 +1,149 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+/* CONTEUDO PRINCIPAL */
+main {
+  position: absolute;
+  background-image: url(../img/fundo.png);
+  background-size: cover;
+  width: 100wh;
+  height: 768px;
+}
+main header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+main nav ul {
+  display: flex;
+}
+main nav ul li {
+  position: relative;
+  right: 170px;
+  top: 12px;
+}
+.logo {
+  margin-top: 15px;
+}
+ul li a {
+  color: white;
+  margin: 20px;
+}
+main .instagram {
+  position: relative;
+  left: 100px;
+  top: -5px;
+}
+
+/* SEÇÃO PRINCIPAL */
+.secao-principal {
+  margin-top: 150px;
+}
+.secao-principal h1 {
+  color: #fff;
+  width: 400px;
+  margin-left: 200px;
+  margin-bottom: 20px;
+}
+.secao-principal p {
+  color: #fff;
+  margin-left: 200px;
+  margin-bottom: 20px;
+}
+.secao-principal .contato {
+  margin-left: 200px;
+  background-color: #92e3a9;
+  width: 183px;
+  height: 39px;
+  border-radius: 10px;
+}
+.secao-principal .sobre {
+  margin-left: 50px;
+  background-color: #181818;
+  color: #fff;
+  width: 183px;
+  height: 39px;
+  border-radius: 10px;
+}
+/* CONTEÚDO DO MEIO */
+.word {
+  position: relative;
+  top: 850px;
+  display: flex;
+  align-items: center;
+}
+.word .parte1 {
+  width: 400px;
+  position: relative;
+  left: 180px;
+}
+.word .parte1 span {
+  background-color: #92e3a9;
+}
+.word .parte1 h2 {
+  margin-top: 10px;
+}
+.word .parte1 p {
+  margin-top: 10px;
+}
+.word .parte2 {
+  position: relative;
+  left: 250px;
+}
+.word .parte2 img {
+  width: 680px;
+}
+.security {
+  position: relative;
+  top: 820px;
+  display: flex;
+  align-items: center;
+}
+.security .parte3 img {
+  width: 680px;
+}
+.security .parte4 span {
+  background-color: #92e3a9;
+}
+.security .parte4 h2 {
+  margin-top: 10px;
+}
+.security .parte4 p {
+  margin-top: 10px;
+}
+.security .parte4 {
+  width: 400px;
+  position: relative;
+  right: -80px;
+}
+
+/* RODAPÉ */
+.rodape {
+  position: relative;
+  top: 900px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.rodape .foot1 {
+  background-color: #333333;
+  height: 96px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.rodape .foot1 img {
+  height: 40px;
+}
+.rodape .foot2 {
+  background-color: #92e3a9;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
