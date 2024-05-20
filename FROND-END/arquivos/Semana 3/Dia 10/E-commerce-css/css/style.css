@@ -1,0 +1,41 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-image: url(../img/vector.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main h1 {
+  margin-bottom: 15px;
+  color: #fff;
+}
+main h2 {
+  margin-bottom: 15px;
+  color: #fff;
+}
+main img {
+  margin-top: 30px;
+}
+main .p1 {
+  color: aqua;
+  margin-top: 5px;
+}
+main .p2 {
+  color: #737373;
+}
+
+main .p3 {
+  color: #23856d;
+  font-weight: bold;
+}
