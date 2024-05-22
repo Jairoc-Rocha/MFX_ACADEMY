@@ -1,0 +1,38 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+/* CONTEÚDO PRINCIPAL */
+main {
+  background-color: #4b4fb2;
+}
+main header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+main nav ul {
+  display: flex;
+}
+main nav ul li {
+  margin: 10px;
+  position: relative;
+  top: 15px;
+}
+main nav ul li a {
+  color: #fafafa;
+}
+.contato button {
+  background-color: #139d8d;
+  color: #fafafa;
+  width: 146px;
+  height: 51px;
+  position: relative;
+  top: -15px;
+  cursor: pointer;
+}
