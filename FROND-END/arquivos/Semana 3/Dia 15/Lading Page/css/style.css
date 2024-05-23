@@ -6,6 +6,9 @@
   text-decoration: none;
   list-style: none;
 }
+body {
+  background-color: #fafafa;
+}
 
 /* CONTEÚDO PRINCIPAL */
 main {
@@ -35,4 +38,233 @@ main nav ul li a {
   position: relative;
   top: -15px;
   cursor: pointer;
+  border: 2px solid #139d8d;
+  border-radius: 5px;
+}
+main .content {
+  width: 500px;
+  height: 348px;
+  position: relative;
+  top: 330px;
+  left: 100px;
+}
+main .content h1 {
+  color: #fafafa;
+  font-size: 42px;
+  line-height: 50px;
+}
+main .content p {
+  color: #f2f2f2;
+  font-size: 24px;
+  line-height: 28px;
+  margin-top: 10px;
+}
+main .button-section {
+  width: 332px;
+  height: 74px;
+  background-color: #139d8d;
+  color: #fff;
+  border: 2px solid #139d8d;
+  cursor: pointer;
+  margin-top: 20px;
+  opacity: 0.5;
+  font-weight: bolder;
+  border-radius: 5px;
+}
+main .button-section:hover {
+  opacity: 1;
+}
+main .redes-sociais {
+  display: flex;
+  gap: 25px;
+  margin-top: 25px;
+}
+main .redes-sociais .last-child {
+  position: relative;
+  top: -2px;
+}
+.notebook {
+  position: relative;
+  top: -200px;
+  left: 430px;
+}
+.middle {
+  display: flex;
+  flex-direction: column;
+}
+.creation {
+  width: 1197px;
+  height: 548px;
+  position: relative;
+  left: 150px;
+  top: 100px;
+}
+.creation h3 {
+  color: #8772e9;
+  text-align: center;
+  font-size: 16px;
+}
+.creation h2 {
+  margin-top: 15px;
+  color: #4f4f4f;
+  text-align: center;
+  font-size: 42px;
+}
+.creation p {
+  margin-top: 15px;
+  color: #4f4f4f;
+  font-size: 18px;
+}
+.especialidade {
+  display: flex;
+  position: relative;
+  top: 70px;
+  justify-content: space-around;
+}
+.especialidade .cliente {
+  width: 265px;
+  height: 317px;
+  color: #4f4f4f;
+  font-size: 20px;
+  text-align: center;
+}
+.especialidade .criacao {
+  width: 265px;
+  height: 317px;
+  color: #4f4f4f;
+  font-size: 20px;
+  text-align: center;
+}
+
+.especialidade .retorno {
+  width: 265px;
+  height: 317px;
+  color: #4f4f4f;
+  font-size: 20px;
+  text-align: center;
+}
+
+.especialidade .entrega {
+  width: 265px;
+  height: 317px;
+  color: #4f4f4f;
+  font-size: 20px;
+  text-align: center;
+}
+
+.functionalities {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 100px;
+}
+.functionalities .websites {
+  width: 816px;
+  height: 128px;
+}
+.functionalities .websites h2 {
+  font-size: 42px;
+  color: #4f4f4f;
+  text-align: center;
+}
+
+.functionalities .websites p {
+  width: 816px;
+  height: 128px;
+  margin-top: 10px;
+  font-size: 18px;
+  color: #7a7a7a;
+}
+
+.artigos-relacionais {
+  width: 406px;
+  height: 310px;
+}
+.artigos-relacionais .tecnologia img {
+  position: relative;
+  top: 35px;
+}
+.artigos-relacionais .tecnologia h4 {
+  position: relative;
+  left: 50px;
+  font-size: 18px;
+  color: #4f4f4f;
+}
+.artigos-relacionais .tecnologia p {
+  position: relative;
+  left: 50px;
+  font-size: 16px;
+  color: #7a7a7a;
+}
+.artigos-relacionais .responsivo img {
+  position: relative;
+  top: 35px;
+}
+.artigos-relacionais .responsivo h4 {
+  position: relative;
+  left: 50px;
+  font-size: 18px;
+  color: #4f4f4f;
+}
+.artigos-relacionais .responsivo p {
+  position: relative;
+  left: 50px;
+  font-size: 16px;
+  color: #7a7a7a;
+}
+.artigos-relacionais .personalizacao img {
+  position: relative;
+  top: 35px;
+}
+.artigos-relacionais .personalizacao h4 {
+  position: relative;
+  left: 50px;
+  font-size: 18px;
+  color: #4f4f4f;
+}
+.artigos-relacionais .personalizacao p {
+  position: relative;
+  left: 50px;
+  font-size: 16px;
+  color: #7a7a7a;
+}
+footer {
+  height: 300px;
+  background-color: #4b4fb2;
+  position: relative;
+  top: 100px;
+}
+footer .empenho {
+  width: 588px;
+  position: relative;
+  left: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+footer .empenho h3 {
+  position: relative;
+  top: 30px;
+  text-transform: uppercase;
+  color: #139d8d;
+  font-size: 16px;
+}
+footer .empenho h2 {
+  position: relative;
+  top: 40px;
+  font-size: 38px;
+  color: #f2f2f2;
+}
+footer .empenho p {
+  position: relative;
+  top: 50px;
+  font-size: 18px;
+  color: #f2f2f2;
+}
+footer .empenho img {
+  position: relative;
+  top: 60px;
 }
