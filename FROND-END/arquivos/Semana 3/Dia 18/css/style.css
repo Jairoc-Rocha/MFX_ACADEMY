@@ -1,0 +1,45 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poetsen One", sans-serif;
+}
+img {
+  width: 300px;
+  height: 500px;
+  margin-top: 20px;
+  border-radius: 5px;
+}
+h1 {
+  margin-top: 20px;
+  text-align: center;
+  color: rgb(4, 0, 255);
+}
+
+/* MAIN*/
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+section {
+  border: 2px solid #bbb;
+  padding: 10px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+section .preco {
+  color: brown;
+  margin-top: 5px;
+}
+section h3 {
+  margin-top: 5px;
+}
+section h3 + p {
+  font-weight: 400;
+  font-family: monospace;
+  font-size: 1.1em;
+  margin-top: 5px;
+}
