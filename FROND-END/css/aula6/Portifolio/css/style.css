@@ -8,10 +8,12 @@
   text-decoration: none;
 }
 
+/* HEADER */
 header {
   display: flex;
   justify-content: flex-end;
   padding: 20px;
+  margin-bottom: 100px;
 }
 .menu ul {
   display: flex;
@@ -21,4 +23,144 @@ header {
 .menu > ul > li > a {
   color: #000;
   font-weight: 700;
+}
+
+/* APRESENTAÇÃO */
+.apresentacao {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 50px;
+  margin-bottom: 50px;
+}
+.textos {
+  width: 497px;
+}
+.textos .resumo h1 {
+  font-size: 44px;
+  line-height: 60px;
+  font-weight: 700;
+  color: #21243d;
+  margin-bottom: 20px;
+}
+.textos .resumo p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 23.5px;
+  color: #21243d;
+  margin-bottom: 20px;
+}
+.download {
+  background-color: #ff6464;
+  width: 208px;
+  height: 47px;
+  border-radius: 2px;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: 0.4s;
+}
+.download:hover {
+  background-color: #f77f7f;
+}
+.minha-imagem img {
+  width: 243px;
+  height: 243px;
+  border-radius: 50%;
+}
+
+/* POSTS */
+.posts {
+  background-color: #edf7fa;
+  height: 396px;
+}
+.posts .recents {
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+  top: 20px;
+}
+
+.posts .division {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 10px;
+}
+.division .block {
+  width: 600px;
+  height: 295px;
+  border-radius: 4px;
+  background-color: #fff;
+  margin-top: 50px;
+  padding: 20px;
+}
+.division .block h3 {
+  width: 374px;
+  height: 85px;
+  font-weight: 700;
+  font-size: 26px;
+  color: #21243d;
+  margin-bottom: 10px;
+  margin-left: 20px;
+}
+.division .block p {
+  width: 374px;
+  height: 34px;
+  font-weight: 400px;
+  font-size: 18px;
+  color: #21243d;
+  margin-left: 20px;
+}
+
+/* FEATURED */
+.featured {
+  width: 858px;
+  margin-left: 200px;
+}
+.featured h3 {
+  width: 152px;
+  height: 60px;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 60px;
+}
+.featured .designing {
+  display: flex;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #e0e0e0;
+  width: 620px;
+  height: 200px;
+}
+
+.featured .designing img {
+  width: 246px;
+  height: 180px;
+  border-radius: 6px;
+}
+
+.featured .portraits {
+  display: flex;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #e0e0e0;
+  width: 620px;
+  height: 200px;
+}
+.featured .portraits img {
+  width: 246px;
+  height: 180px;
+  border-radius: 6px;
+}
+
+.featured .days {
+  display: flex;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #e0e0e0;
+  width: 620px;
+  height: 200px;
+}
+.featured .days img {
+  width: 246px;
+  height: 180px;
+  border-radius: 6px;
 }
