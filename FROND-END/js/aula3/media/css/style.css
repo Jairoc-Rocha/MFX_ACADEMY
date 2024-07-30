@@ -1,0 +1,64 @@
+/* RESET */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* CONTEÚDO PRINCIPAL */
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+
+#media {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: #2c2c2c;
+  width: 600px;
+  height: 350px;
+  border-radius: 20px;
+}
+
+.input-media {
+  display: flex;
+}
+
+.content-media > label {
+  color: #fff;
+  font-weight: 600;
+}
+
+.content-media > .input-media {
+  border: none;
+  border-radius: 3px;
+  padding: 3px;
+}
+
+.calculo-media {
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+.calculo-media > .button-media {
+  background-color: #2c2c2c;
+  color: #fff;
+  border: 2px solid #fff;
+  border-radius: 10px;
+  padding: 5px 35px;
+}
+
+.nota-total {
+  text-align: center;
+  color: #fff;
+}

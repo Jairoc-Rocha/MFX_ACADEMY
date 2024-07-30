@@ -1,5 +1,5 @@
-var nome = "Jairo";
-var sobreNome = "Cordeiro da Rocha";
-var nomeCompleto = nome + " " + sobreNome;
+var primeiroNome = "Jairo";
+var ultimoNome = "Rocha";
+var nomeCompleto = primeiroNome + " " + primeiroNome;
 
 console.log(nomeCompleto);
