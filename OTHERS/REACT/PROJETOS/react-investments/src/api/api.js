@@ -621,6 +621,10 @@ const backend = {
   ],
 };
 
+function calculatePercentage(currentValue, previousValue) {
+  return (currentValue / previousValue - 1) * 100;
+}
+
 export const sanitizedBackend = backend.investments
   .toSorted((a, b) => {
     return a.description.localeCompare(b.description);
@@ -632,7 +636,31 @@ export const sanitizedBackend = backend.investments
       })
       .toSorted((a, b) => {
         return a.month - b.month;
+      })
+      .map((report, index, currentReports) => {
+        // const {id, month, year, value} = report
+        // return {id, month, year, value}
+        const { investmentId, ...reportFields } = report;
+
+        if (index === 0) {
+          return { ...reportFields, percentage: 0 };
+        }
+
+        const currentValue = report.value;
+        const previousValue = currentReports[index - 1].value;
+        const percentage = calculatePercentage(currentValue, previousValue);
+        return { ...reportFields, percentage };
       });
 
-    return { ...investment, reports: filteredReports };
+    //const lastValue = filteredReports[filteredReports.length - 1].value
+    const lastValue = filteredReports.at(-1).value;
+    const firstValue = filteredReports[0].value;
+    const totalPercentage = calculatePercentage(lastValue, firstValue);
+
+    return {
+      ...investment,
+      totalPercentage,
+      balance: lastValue - firstValue,
+      reports: filteredReports,
+    };
   });

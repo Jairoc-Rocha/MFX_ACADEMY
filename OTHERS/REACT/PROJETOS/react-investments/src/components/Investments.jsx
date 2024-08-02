@@ -1,7 +1,7 @@
-const Investments = () => {
+const Investments = ({ children }) => {
   return (
     <>
-      <h1>Investments</h1>
+      <div>{children}</div>
     </>
   );
 };

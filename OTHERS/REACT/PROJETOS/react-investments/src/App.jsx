@@ -1,5 +1,9 @@
 import { sanitizedBackend } from "./api/api";
 import "./App.css";
+import Header from "./components/Header";
+import Investment from "./components/Investment";
+import Investments from "./components/Investments";
+import Main from "./components/Main";
 
 function Json({ children: json }) {
   return (
@@ -12,19 +16,17 @@ function Json({ children: json }) {
 function App() {
   return (
     <div>
-      <header>
-        <div className="bg-gray-100 mx-auto p-4">
-          <h1 className="text-center font-semibold text-xl">
-            react-investments v1.0.1
-          </h1>
-        </div>
-      </header>
+      <Header>
+        <h1>react-investments v1.0.1</h1>
+      </Header>
 
-      <main>
-        <div className="container mx-auto p-4">
-          <Json>{sanitizedBackend}</Json>
-        </div>
-      </main>
+      <Main>
+        <Investments>
+          {sanitizedBackend.map((investment) => {
+            return <Investment key={investment.id}>{investment}</Investment>;
+          })}
+        </Investments>
+      </Main>
     </div>
   );
 }
