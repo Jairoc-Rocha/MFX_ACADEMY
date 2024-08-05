@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cadastro de estacionamento</title>
+    <script src="./js/main.js" defer></script>
+  </head>
+  <body>
+    <div>
+      <label for="marca">Marca:</label>
+      <input type="text" id="marca" />
+      <label for="modelo">Modelo:</label>
+      <input type="text" id="modelo" />
+      <label for="placa">Placa:</label>
+      <input type="text" id="placa" />
+      <button onclick="capturaDados()">Cadastrar</button>
+    </div>
+
+    <hr />
+
+    <div id="carrosCadastrados"></div>
+  </body>
+</html>
