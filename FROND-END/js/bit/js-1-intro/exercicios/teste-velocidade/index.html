@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Teste de velocidade</title>
+    <script src="./js/main.js" defer></script>
+  </head>
+  <body>
+    <h1>Teste de velocidade</h1>
+    <form>
+      <div>
+        <label for="nome1">Informe o nome do primeiro veículo:</label>
+        <input type="text" name="nome1" id="nome1" />
+        <label for="velocidade1"
+          >Informe a velocidade do primeiro veículo:</label
+        >
+        <input type="number" name="velocidade1" id="velocidade1" />
+      </div>
+
+      <hr />
+
+      <div>
+        <label for="nome2">Informe o nome do segundo veículo:</label>
+        <input type="text" name="nome2" id="nome2" />
+        <label for="velocidade2"
+          >Informe a velocidade do segundo veículo:</label
+        >
+        <input type="number" name="velocidade2" id="velocidade2" />
+      </div>
+
+      <button type="button" onclick="velocidade()">Testar Velocidade</button>
+
+      <div id="resultado"></div>
+    </form>
+  </body>
+</html>
