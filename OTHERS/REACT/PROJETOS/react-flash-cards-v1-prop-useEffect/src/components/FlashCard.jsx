@@ -1,10 +1,15 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const FlashCard = ({
   title = "Título do card",
   description = "Descrição do card",
+  showFlashCardTitle = true,
 }) => {
-  const [showTitle, setShowTitle] = useState("true");
+  const [showTitle, setShowTitle] = useState(showFlashCardTitle);
+
+  useEffect(() => {
+    setShowTitle(showFlashCardTitle);
+  }, [showFlashCardTitle]);
 
   function handleCardClick() {
     // setShowTitle(!showTitle);

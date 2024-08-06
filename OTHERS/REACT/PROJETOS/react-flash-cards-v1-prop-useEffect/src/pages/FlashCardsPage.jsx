@@ -56,7 +56,12 @@ const FlashCardsPage = () => {
         <FlahsCards>
           {allCards.map(({ id, title, description }) => {
             return (
-              <FlashCard key={id} title={title} description={description} />
+              <FlashCard
+                key={id}
+                title={title}
+                description={description}
+                showFlashCardTitle={showTitle}
+              />
             );
           })}
         </FlahsCards>

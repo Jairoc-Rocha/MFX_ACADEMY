@@ -57,5 +57,3 @@ export const allFlashCards = [
   .toSorted((a, b) => {
     return a.title.localeCompare(b.title);
   });
-
-console.log(allFlashCards);

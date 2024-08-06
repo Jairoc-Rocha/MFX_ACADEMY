@@ -52,10 +52,8 @@ export const allFlashCards = [
   },
 ]
   .map((item) => {
-    return { ...item, id: getNewId() };
+    return { id: getNewId(), ...item, showTitle: true };
   })
   .toSorted((a, b) => {
     return a.title.localeCompare(b.title);
   });
-
-console.log(allFlashCards);
