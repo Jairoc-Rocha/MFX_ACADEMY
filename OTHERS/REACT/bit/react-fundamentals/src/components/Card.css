@@ -1,0 +1,42 @@
+.container {
+  display: flex;
+  gap: 100px;
+  background-color: #d7e1e7;
+  margin: 0 auto;
+  padding: 70px;
+  border-radius: 5px;
+}
+
+img {
+  width: 400px;
+  height: 600px;
+  border: 8px solid #000;
+}
+
+.informations {
+  width: 700px;
+  height: 400px;
+}
+
+.informations p {
+  margin-top: 30px;
+  font-size: 1.5rem;
+}
+
+.informations button {
+  background-color: #000;
+  color: #fff;
+  width: 150px;
+  height: 40px;
+  border-radius: 5px;
+  margin-top: 20px;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.informations button:hover {
+  background-color: #fff;
+  color: #000;
+  font-weight: bold;
+  margin-left: 5px;
+}
